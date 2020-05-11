@@ -1,12 +1,17 @@
 <template>
   <div class="home-page">
-    Books Vue
+    <Header />
   </div>
 </template>
 
 <script>
+import Header from './Header';
+
 export default {
-  name: 'HomePage'
+  name: 'HomePage',
+  components: {
+    Header
+  }
 }
 </script>
 

@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h3>Best Sellers lists</h3>
+    <h3>Best Sellers lists
+      <span class="small">{{bestSellers.bestsellers_date}}</span>
+    </h3>
 
   </div>
 </template>
@@ -16,7 +18,7 @@ export default {
   },
   methods: {
     getLists() {
-      console.log('Work')
+      
       this.$http
         .get(
           `https://api.nytimes.com/svc/books/v3/lists/overview.json?api-key=iC5ZgYPG8g6NpG9VdPw0iI4XIC37fTGs`

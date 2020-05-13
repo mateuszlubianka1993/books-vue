@@ -2,12 +2,17 @@
   <div>
     <h3>Best Sellers lists
       <span class="small">{{bestSellers.bestsellers_date}}</span>
+      <mdb-container fluid>
+        <List v-for="(list, index) in bestSellers.lists" :key="index" :list="list" />
+      </mdb-container>
     </h3>
 
   </div>
 </template>
 
 <script>
+import List from './List';
+import {mdbContainer} from 'mdbvue';
 
 export default {
   name: 'BestsellersLists',
@@ -15,6 +20,10 @@ export default {
     return {
       bestSellers: []
     }
+  },
+  components: {
+    List,
+    mdbContainer
   },
   methods: {
     getLists() {

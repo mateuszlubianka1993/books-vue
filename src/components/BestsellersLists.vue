@@ -37,7 +37,6 @@ export default {
         })
         .then((data) => {
           this.bestSellers = data.results;
-          console.log(this.bestSellers)
         });
     }
   },

@@ -4,7 +4,7 @@
     <mdb-edge-header  class="header"/>
 
     <!-- Card Container -->
-    <mdb-container free-bird>
+    <mdb-container free-bird class="animated fadeIn">
       <mdb-row>
         <mdb-col md="8" lg="7" class="mx-auto float-none white z-depth-1 py-2 px-2">
 

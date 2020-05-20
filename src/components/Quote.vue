@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-3">
+  <div class="mb-3" v-animateOnScroll="'fadeInRight'">
     <h4>{{quote.title}}</h4>
     <blockquote class="blockquote">
       <p class="mb-0">
@@ -13,8 +13,13 @@
 </template>
 
 <script>
+import { animateOnScroll } from "mdbvue";
+
 export default {
   name: "Quote",
+  directives: {
+      animateOnScroll
+  },
   data() {
     return {
       quote: "",

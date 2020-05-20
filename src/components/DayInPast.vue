@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4>Today in History - {{ day.date }}</h4>
+    <h4 class="animated fadeIn">Today in History - {{ day.date }}</h4>
     <h5 class="text-left">Births</h5>
     <mdb-carousel
       class="h-auto d-inline-block small items-box align-middle mb-4"
@@ -8,6 +8,7 @@
       slide
       :items="day.births"
       indicators
+      v-animateOnScroll="'fadeInRight'"
     ></mdb-carousel>
     <h5 class="text-left">Deaths</h5>
     <mdb-carousel
@@ -16,6 +17,7 @@
       slide
       :items="day.deaths"
       indicators
+      v-animateOnScroll="'fadeInRight'"
     ></mdb-carousel>
     <h5 class="text-left">Events</h5>
     <mdb-carousel
@@ -24,15 +26,19 @@
       slide
       :items="day.events"
       indicators
+      v-animateOnScroll="'fadeInRight'"
     ></mdb-carousel>
   </div>
 </template>
 
 <script>
-import { mdbCarousel } from "mdbvue";
+import { mdbCarousel, animateOnScroll } from "mdbvue";
 
 export default {
   name: "DayInPast",
+  directives: {
+      animateOnScroll
+  },
   data() {
     return {
       today: new Date().getDate(),

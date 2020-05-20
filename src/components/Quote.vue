@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-3">
     <h4>{{quote.title}}</h4>
     <blockquote class="blockquote">
       <p class="mb-0">

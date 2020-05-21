@@ -1,21 +1,24 @@
 <template>
   <div class="list">
-    <h5>List {{ list.display_name }}</h5>         
+    <h5>List {{ list.display_name }}</h5>
     <mdbRow>
-    
-    <mdbCol :action="true" v-for="(book, index) in list.books" :key="index">
-      <mdb-card class="book-card">
-        <mdb-card-image
-          :src="book.book_image"
-          alt="Card image cap"
-          class="book-img"
-        ></mdb-card-image>
-        <mdb-card-body>
-          <mdb-card-title class="book-title" >{{ book.title }}</mdb-card-title>
-        </mdb-card-body>
-      </mdb-card>
-    </mdbCol>
-  </mdbRow>
+      <mdbCol :action="true" v-for="(book, index) in list.books" :key="index">
+        <router-link :to="'/book-details/' + book.title">
+          <mdb-card class="book-card">
+            <mdb-card-image
+              :src="book.book_image"
+              alt="Card image cap"
+              class="book-img"
+            ></mdb-card-image>
+            <mdb-card-body>
+              <mdb-card-title class="book-title">{{
+                book.title
+              }}</mdb-card-title>
+            </mdb-card-body>
+          </mdb-card>
+        </router-link>
+      </mdbCol>
+    </mdbRow>
   </div>
 </template>
 

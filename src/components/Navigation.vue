@@ -5,7 +5,7 @@
     </mdb-navbar-brand>
     <mdb-navbar-toggler>
       <mdb-navbar-nav right>
-        <mdb-nav-item href="#" active>Home</mdb-nav-item>
+        <router-link to="/" ><mdb-nav-item active>Home</mdb-nav-item></router-link>
         <mdb-nav-item href="#">Link</mdb-nav-item>
         <mdb-nav-item class="disabled" href="#">Disabled</mdb-nav-item>
         <mdb-dropdown tag="li" class="nav-item">

@@ -3,7 +3,7 @@
     <h5>List {{ list.display_name }}</h5>
     <mdbRow>
       <mdbCol :action="true" v-for="(book, index) in list.books" :key="index">
-        <router-link :to="'/book-details/' + book.title">
+        <router-link :to="{ path: '/book-details/' + book.title, query: {title: book.title, author: book.author, image: book.book_image, description: book.description, rank: book.rank, weeks: book.weeks_on_list }}">
           <mdb-card class="book-card">
             <mdb-card-image
               :src="book.book_image"

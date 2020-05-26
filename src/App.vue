@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="lime lighten-4">
     <Navigation />
     <router-view></router-view>
     <Footer />
@@ -27,5 +27,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   padding-bottom: 40px;
+  min-height: 100vh;
+  background-color: green;
 }
 </style>

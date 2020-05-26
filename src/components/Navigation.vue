@@ -1,7 +1,7 @@
 <template>
-  <mdb-navbar expand="large" dark color="indigo">
+  <mdb-navbar expand="large" dark color="yellow darken-1" class="fixed-top">
     <mdb-navbar-brand href="#">
-      Books App
+      <mdb-icon class="font-weight-bold pink-text" icon="book-open" /> Book<span class="font-weight-bold pink-text">s</span> Ap<span class="font-weight-bold pink-text">p</span>
     </mdb-navbar-brand>
     <mdb-navbar-toggler>
       <mdb-navbar-nav right>
@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import { mdbNavbar, mdbNavbarBrand, mdbNavbarToggler, mdbNavbarNav, mdbNavItem } from 'mdbvue';
+import { mdbNavbar, mdbNavbarBrand, mdbNavbarToggler, mdbNavbarNav, mdbNavItem, mdbIcon } from 'mdbvue';
 
 export default {
   name: 'Navigation',
@@ -22,7 +22,8 @@ export default {
       mdbNavbarBrand,
       mdbNavbarToggler,
       mdbNavbarNav,
-      mdbNavItem
+      mdbNavItem,
+      mdbIcon
     }
 }
 </script>

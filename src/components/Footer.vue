@@ -1,8 +1,8 @@
 <template>
   <!-- Footer -->
-  <mdb-footer color="blue" class="font-small mt-4 fixed-bottom">
+  <mdb-footer color="yellow darken-1" class="font-small mt-4 fixed-bottom">
     <div class="footer-copyright text-center py-3">
-      <mdb-container fluid>
+      <mdb-container fluid class="font-weight-bold pink-text">
         &copy; 2020 Copyright: <a href="https://github.com/mateuszlubianka1993/books-vue"> Books Vue App </a>
       </mdb-container>
     </div>

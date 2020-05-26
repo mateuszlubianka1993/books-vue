@@ -1,12 +1,13 @@
 <template>
-  <div>
-    <form class="container mb-5" @submit.prevent="getBooks">
+  <div class="pt-5 animated fadeIn">
+    <h2 class="mt-5">Search for books by author or title.</h2>
+    <form class="container mb-5 mt-1" @submit.prevent="getBooks">
       <mdb-row>
         <mdb-col class="col-12">
             <mdb-input v-model="searched" type="text" placeholder="Search" aria-label="Search"/>
         </mdb-col>
         <mdb-col class="col-12 d-flex align-items-center">
-          <mdb-btn block type="submit" size="sm" color="indigo">Search</mdb-btn>
+          <mdb-btn block type="submit" size="sm" color="yellow darken-1">Search</mdb-btn>
         </mdb-col>
       </mdb-row>
     </form>
@@ -48,7 +49,6 @@
         })
         .then((data) => {
           this.books = data.items;
-          console.log(this.books)
           this.searched = '';
         });
       }

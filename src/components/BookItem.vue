@@ -1,7 +1,7 @@
 <template>
 	<mdb-container>
 		<mdb-row>
-			<mdb-col>
+			<mdb-col class="animated fadeIn">
 				<mdb-card>
 					<mdb-view hover>
 							<mdb-card-image :src="book.volumeInfo.imageLinks.thumbnail" class="book-img" alt="Card image cap"></mdb-card-image>

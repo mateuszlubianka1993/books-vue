@@ -3,7 +3,7 @@
     <h3>Best Sellers lists
       <span class="small">{{bestSellers.bestsellers_date}}</span>
       <mdb-container fluid>
-        <List v-for="(list, index) in bestSellers.lists" :key="index" :list="list" v-animateOnScroll="'fadeInLeft'"/>
+        <List v-for="(list, index) in bestSellers.lists" :key="index" :list="list" />
       </mdb-container>
     </h3>
 
@@ -12,13 +12,10 @@
 
 <script>
 import List from './List';
-import {mdbContainer, animateOnScroll} from 'mdbvue';
+import {mdbContainer} from 'mdbvue';
 
 export default {
   name: 'BestsellersLists',
-  directives: {
-      animateOnScroll
-  },
   data() {
     return {
       bestSellers: []

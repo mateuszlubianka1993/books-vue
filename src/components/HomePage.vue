@@ -3,12 +3,12 @@
     <Header />
     <mdbContainer class="mt-4">
       <mdbRow>
-        <mdb-col col="8">
-          <BestsellersLists/>
-        </mdb-col>
-        <mdb-col col="4">
+        <mdb-col  class="col-12 col-lg-4">
           <Quote />
           <DayInPast />
+        </mdb-col>
+        <mdb-col class="col-12 col-lg-8">
+          <BestsellersLists/>
         </mdb-col>
       </mdbRow>
     </mdbContainer>

@@ -7,7 +7,6 @@
       :interval="6000"
       slide
       :items="day.births"
-      indicators
       v-animateOnScroll="'fadeInRight'"
     ></mdb-carousel>
     <h5 class="text-left">Deaths</h5>
@@ -16,7 +15,6 @@
       :interval="6000"
       slide
       :items="day.deaths"
-      indicators
       v-animateOnScroll="'fadeInRight'"
     ></mdb-carousel>
     <h5 class="text-left">Events</h5>
@@ -25,7 +23,6 @@
       :interval="6000"
       slide
       :items="day.events"
-      indicators
       v-animateOnScroll="'fadeInRight'"
     ></mdb-carousel>
   </div>

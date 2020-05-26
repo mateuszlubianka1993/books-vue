@@ -6,7 +6,7 @@
     <mdb-navbar-toggler>
       <mdb-navbar-nav right>
         <router-link to="/" ><mdb-nav-item active>Home</mdb-nav-item></router-link>
-        <mdb-nav-item href="#">Search</mdb-nav-item>
+        <mdb-nav-item to="/search">Search</mdb-nav-item>
       </mdb-navbar-nav>
     </mdb-navbar-toggler>
   </mdb-navbar>

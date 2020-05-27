@@ -28,6 +28,6 @@ export default {
   color: #2c3e50;
   padding-bottom: 40px;
   min-height: 100vh;
-  background-color: green;
+  background-color: #2c3e50;
 }
 </style>

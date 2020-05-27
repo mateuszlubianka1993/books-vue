@@ -44,6 +44,8 @@ You can also search for books by author or title.
 * Html
 * CSS
 * Java Script
+* vue-resource
+* vue-router
 * MDBVue
 * Google Books API
 * Quotes API
